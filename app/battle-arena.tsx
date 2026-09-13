@@ -3,10 +3,10 @@ import {
   View,
   Text,
   TouchableOpacity,
-  SafeAreaView,
   ScrollView,
   ActivityIndicator,
 } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { useState, useEffect, useRef } from 'react';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { ChevronLeft, Swords, RotateCcw, Home } from 'lucide-react-native';
@@ -17,7 +17,7 @@ import { saveBattleResult } from '@/services/supabase';
 import { HpBar } from '@/components/HpBar';
 import { MoveButton } from '@/components/MoveButton';
 import { TypeBadge } from '@/components/TypeBadge';
-import { BattleSprite } from '@/components/BattleSprite';
+import BattleSprite from '@/components/BattleSprite';
 
 type BattlePhase = 'loading' | 'fighting' | 'ended';
 

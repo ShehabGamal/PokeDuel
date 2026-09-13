@@ -5,9 +5,7 @@ import Animated, {
   useAnimatedStyle,
   withSequence,
   withTiming,
-  withRepeat,
   Easing,
-  cancelAnimation,
 } from 'react-native-reanimated';
 import { Pokemon } from '@/types/pokemon';
 
@@ -18,7 +16,7 @@ interface BattleSpriteProps {
   isHit?: boolean;
 }
 
-export function BattleSprite({ pokemon, side, isAttacking, isHit }: BattleSpriteProps) {
+export default function BattleSprite({ pokemon, side, isAttacking, isHit }: BattleSpriteProps) {
   const translateX = useSharedValue(0);
   const opacity = useSharedValue(1);
   const scale = useSharedValue(1);

@@ -1,4 +1,5 @@
-import { StyleSheet, View, Text, TouchableOpacity, Image, SafeAreaView, ScrollView } from 'react-native';
+import { StyleSheet, View, Text, TouchableOpacity, Image, ScrollView } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 import { Swords, Zap, ChevronRight, Trophy } from 'lucide-react-native';
 

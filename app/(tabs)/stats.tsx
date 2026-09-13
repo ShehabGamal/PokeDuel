@@ -2,11 +2,11 @@ import {
   StyleSheet,
   View,
   Text,
-  SafeAreaView,
   ScrollView,
   RefreshControl,
   ActivityIndicator,
 } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { useState, useEffect, useCallback } from 'react';
 import { Trophy, Swords, Target, TrendingUp, Clock } from 'lucide-react-native';
 import { fetchBattleHistory, fetchScoreSummary, ScoreSummary } from '@/services/supabase';
